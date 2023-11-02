@@ -1,0 +1,28 @@
+@import "@/styles/variables";
+
+.wrapper {
+    margin-left: 15px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    max-width: 685px;
+    :first-child {
+        font-size: 48px;
+        font-weight: 700;
+        
+        span {
+            color: $primary;
+            font-size: 48px;
+            font-weight: 700;
+        }
+    }
+
+    :last-child {
+        font-size: 24px;
+        margin-left: 3px;
+        max-width: 608px;
+    }
+}

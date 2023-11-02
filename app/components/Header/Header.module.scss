@@ -1,0 +1,56 @@
+@import "@/styles/variables";
+
+.wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 96px;
+    padding: 0 20px;
+    hr {
+        align-self: center;
+        display: block;
+        margin: 0;
+        width: calc(100% - 4px);
+        border: none;
+        border-bottom: 2px solid $white;
+    }
+    background-color: $black;
+    z-index: 1;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: minmax(160px, 260px) 1fr 260px;
+    height: 100%;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-self: center;
+    font-size: 12px;
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        a {
+            width: auto;
+        }
+    }
+}
+
+.joinButton {
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    padding: 16px 15px;
+    border-radius: 15px;
+    border: 2px solid $white;
+    font-size: 12px;
+    cursor: pointer;
+}

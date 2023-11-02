@@ -1,0 +1,62 @@
+@import "@/styles/variables";
+
+.wrapper {
+    margin: 0 20px 130px 20px;
+}
+
+.heading {
+    max-width: 613px;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.functionality {
+    position: relative;
+    display: flex;
+    gap: 90px;
+    justify-content: space-between;
+    margin-left: 85px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 550px;
+
+    max-width: 296px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+
+    :first-child {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    :last-child {
+        margin-top: -7px;
+    }
+}
+
+.navigation {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div {
+        text-align: right;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 0.60);
+    }
+}
+
+.card {
+    position: absolute;
+}
+
+.active {
+    color: $white !important;
+}

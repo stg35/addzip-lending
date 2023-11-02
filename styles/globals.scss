@@ -1,0 +1,23 @@
+@import "variables";
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: $white;
+	background: $black;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+input, select, textarea, button{ font-family:inherit; }
+
+a {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+* {
+	box-sizing: border-box;
+}

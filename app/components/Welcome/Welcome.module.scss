@@ -1,0 +1,17 @@
+@import "@/styles/variables";
+
+.wrapper {
+    height: 100vh;
+    margin-top: 96px;
+    background: url("/welcome.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top 96px;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    padding: 28px 20px 0 20px;
+}
