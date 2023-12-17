@@ -25,10 +25,10 @@ export const Functionality = (): JSX.Element => {
 							layout
 							className={styles.card}
 							key={CardType.Main}
-							initial={{ opacity: 0, y: -200 }}
+							initial={{ opacity: 0, y: 200 }}
 							animate={{ opacity: 1, y: 0 }}
 							exit={{ opacity: 0 }}
-							transition={{ duration: 1, type: 'spring' }}
+							transition={{ duration: 0.75, type: 'spring' }}
 						>
 							<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 						</motion.div>
@@ -38,10 +38,10 @@ export const Functionality = (): JSX.Element => {
 							layout
 							className={styles.card}
 							key={CardType.Catalog}
-							initial={{ opacity: 0, y: -200 }}
+							initial={{ opacity: 0, y: 200 }}
 							animate={{ opacity: 1, y: 0 }}
 							exit={{ opacity: 0 }}
-							transition={{ duration: 1, type: 'spring' }}
+							transition={{ duration: 0.75, type: 'spring' }}
 						>
 							<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 						</motion.div>
@@ -51,10 +51,10 @@ export const Functionality = (): JSX.Element => {
 							layout
 							className={styles.card}
 							key={CardType.Main}
-							initial={{ opacity: 0, y: -200 }}
+							initial={{ opacity: 0, y: 200 }}
 							animate={{ opacity: 1, y: 0 }}
 							exit={{ opacity: 0 }}
-							transition={{ duration: 1, type: 'spring' }}
+							transition={{ duration: 0.75, type: 'spring' }}
 						>
 							<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 						</motion.div>
@@ -64,10 +64,10 @@ export const Functionality = (): JSX.Element => {
 							layout
 							className={styles.card}
 							key={CardType.Item}
-							initial={{ opacity: 0, y: -200 }}
+							initial={{ opacity: 0, y: 200 }}
 							animate={{ opacity: 1, y: 0 }}
 							exit={{ opacity: 0 }}
-							transition={{ duration: 1, type: 'spring' }}
+							transition={{ duration: 0.75, type: 'spring' }}
 						>
 							<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 						</motion.div>

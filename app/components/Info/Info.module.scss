@@ -1,28 +1,31 @@
-@import "@/styles/variables";
+@import '@/styles/variables';
 
 .wrapper {
-    margin-left: 15px;
+	display: flex;
+	margin: 0 80px;
+	margin-top: 80px;
+	justify-content: space-between;
 }
 
 .text {
-    display: flex;
-    flex-direction: column;
-    gap: 33px;
-    max-width: 685px;
-    :first-child {
-        font-size: 48px;
-        font-weight: 700;
-        
-        span {
-            color: $primary;
-            font-size: 48px;
-            font-weight: 700;
-        }
-    }
+	display: flex;
+	flex-direction: column;
+	gap: 33px;
+	max-width: 685px;
+	:first-child {
+		font-size: 48px;
+		font-weight: 700;
 
-    :last-child {
-        font-size: 24px;
-        margin-left: 3px;
-        max-width: 608px;
-    }
+		span {
+			color: $primary;
+			font-size: 48px;
+			font-weight: 700;
+		}
+	}
+
+	:last-child {
+		font-size: 24px;
+		margin-left: 3px;
+		max-width: 608px;
+	}
 }

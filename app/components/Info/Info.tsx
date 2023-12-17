@@ -1,4 +1,5 @@
 import styles from './Info.module.scss';
+import Image from 'next/image';
 
 export const Info = (): JSX.Element => {
 	return (
@@ -11,6 +12,9 @@ export const Info = (): JSX.Element => {
 				<div>
 					Маркетплейс, где ваш уличный стиль обретает новую жизнь — продавайте и анонсируйте дропы
 				</div>
+			</div>
+			<div className={styles.mockup}>
+				<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 			</div>
 		</div>
 	);

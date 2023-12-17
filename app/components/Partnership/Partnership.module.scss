@@ -1,68 +1,68 @@
-@import "@/styles/variables";
+@import '@/styles/variables';
 
 .wrapper {
-    padding: 0 20px;
+	padding: 0 80px;
 }
 
 .heading {
-    display: flex;
-    justify-content: space-between;
-    font-size: 48px;
-    font-weight: 700;
-    div {
-        display: flex;
-        gap: 8px;
-    }
+	display: flex;
+	justify-content: space-between;
+	font-size: 48px;
+	font-weight: 700;
+	div {
+		display: flex;
+		gap: 8px;
+	}
 }
 
 .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 48px;
-    gap: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 48px;
+	gap: 24px;
 
-    span {
-        width: 611px;
-        text-align: center;
-        font-size: 24px;
-    }
+	span {
+		width: 611px;
+		text-align: center;
+		font-size: 24px;
+	}
 
-    .primary {
-        color: $primary;
-        font-weight: 700;
-    }
+	.primary {
+		color: $primary;
+		font-weight: 700;
+	}
 
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 24px;
-        margin-top: 95px;
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+		margin-top: 95px;
 
-        input {
-            width: 296px;
-            padding: 16px 20px;
-            border-radius: 15px;
-            border: 2px solid #FFF;
-            background-color: $black;
-            color: $white;
-            outline-color: $primary;
+		input {
+			width: 296px;
+			padding: 16px 20px;
+			border-radius: 15px;
+			border: 2px solid #fff;
+			background-color: $black;
+			color: $white;
+			outline-color: $primary;
 
-            &::placeholder {
-                color: $white;
-            }
-        }
+			&::placeholder {
+				color: $white;
+			}
+		}
 
-        button {
-            border-radius: 15px;
-            background: $primary;
-            border: none;
-            text-align: center;
-            padding: 12px 23px;
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: 500;
-        }
-    }
+		button {
+			border-radius: 15px;
+			background: $primary;
+			border: none;
+			text-align: center;
+			padding: 12px 23px;
+			cursor: pointer;
+			font-size: 14px;
+			font-weight: 500;
+		}
+	}
 }
