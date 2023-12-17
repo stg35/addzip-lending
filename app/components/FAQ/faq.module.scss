@@ -1,0 +1,27 @@
+@import '@/styles/variables';
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 22px;
+	margin-top: 80px;
+}
+
+.stars {
+	display: flex;
+	gap: 8px;
+}
+
+.heading {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 48px;
+	color: $white;
+}
+
+.content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 140px;
+	column-gap: 20px;
+}
