@@ -30,7 +30,7 @@ export const Functionality = (): JSX.Element => {
 							exit={{ opacity: 0 }}
 							transition={{ duration: 1, type: 'spring' }}
 						>
-							<Image src={'/trend.svg'} alt="" width={472.45} height={991.494} />
+							<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 						</motion.div>
 					)}
 					{cardState == CardType.Catalog && (
@@ -43,7 +43,7 @@ export const Functionality = (): JSX.Element => {
 							exit={{ opacity: 0 }}
 							transition={{ duration: 1, type: 'spring' }}
 						>
-							<Image src={'/trend.svg'} alt="" width={472.45} height={991.494} />
+							<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 						</motion.div>
 					)}
 					{cardState == CardType.Brand && (
@@ -56,7 +56,7 @@ export const Functionality = (): JSX.Element => {
 							exit={{ opacity: 0 }}
 							transition={{ duration: 1, type: 'spring' }}
 						>
-							<Image src={'/trend.svg'} alt="" width={472.45} height={991.494} />
+							<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 						</motion.div>
 					)}
 					{cardState == CardType.Item && (
@@ -69,7 +69,7 @@ export const Functionality = (): JSX.Element => {
 							exit={{ opacity: 0 }}
 							transition={{ duration: 1, type: 'spring' }}
 						>
-							<Image src={'/trend.svg'} alt="" width={472.45} height={991.494} />
+							<Image src={'/mockup.svg'} alt="" width={472.45} height={500.494} />
 						</motion.div>
 					)}
 				</AnimatePresence>
