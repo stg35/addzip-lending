@@ -1,74 +1,74 @@
-@import "@/styles/variables";
+@import '@/styles/variables';
 
 .wrapper {
-    padding: 500px 20px 52px 20px;
+	padding: 0px 20px 52px 20px;
 }
 
 .heading {
-    font-size: 48px;
-    font-weight: 700;
-    span {
-        color: $primary;
-    }
+	font-size: 48px;
+	font-weight: 700;
+	span {
+		color: $primary;
+	}
 }
 
 .roadmap {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .month {
-    align-self: center;
-    width: 148px;
-    height: 49px;
-    border-radius: 15px;
-    color: $primary;
-    border: 2px solid $primary;
-    text-align: center;
-    padding-top: 14px;
+	align-self: center;
+	width: 148px;
+	height: 49px;
+	border-radius: 15px;
+	color: $primary;
+	border: 2px solid $primary;
+	text-align: center;
+	padding-top: 14px;
 }
 
 .infoWrapper {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-    width: 50%;
-    height: 253px;
+	display: flex;
+	align-items: center;
+	margin: 20px 0;
+	width: 50%;
+	height: 253px;
 }
 
 .left {
-    border-right: 2px solid $primary;
+	border-right: 2px solid $primary;
 }
 
 .right {
-    align-self:flex-end;
-    border-left: 2px solid $primary;
-    .info {
-        margin-left: auto;
-    }
+	align-self: flex-end;
+	border-left: 2px solid $primary;
+	.info {
+		margin-left: auto;
+	}
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    gap: 17px;
-    max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 17px;
+	max-width: 300px;
 
-    .headingInfo {
-        color: $primary;
-        font-size: 24px;
-        font-weight: 700;
-    }
+	.headingInfo {
+		color: $primary;
+		font-size: 24px;
+		font-weight: 700;
+	}
 }
 
 .addition {
-    color: $primary;
-    font-size: 48px;
-    font-weight: 700;
-    width: 315px;
-    margin: auto;
+	color: $primary;
+	font-size: 48px;
+	font-weight: 700;
+	width: 315px;
+	margin: auto;
 }
 
 .last {
-    display: flex;
+	display: flex;
 }
