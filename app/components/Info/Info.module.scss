@@ -29,3 +29,43 @@
 		max-width: 608px;
 	}
 }
+
+@media (max-width: 768px) {
+	.wrapper {
+		margin: 0 16px;
+		flex-direction: column;
+		padding-top: 200px;
+	}
+
+	.text {
+		gap: 32px;
+		:first-child {
+			font-size: 24px;
+			font-weight: 700;
+			line-height: 30px;
+
+			span {
+				color: $primary;
+				font-size: 24px;
+				font-weight: 700;
+			}
+		}
+
+		:last-child {
+			font-size: 16px;
+			margin-left: 0;
+			max-width: 608px;
+			line-height: 24px;
+		}
+	}
+
+	.mockup-image {
+		width: 246px;
+		height: 388.85px;
+	}
+
+	.mockup {
+		margin-top: 30px;
+		text-align: center;
+	}
+}

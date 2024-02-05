@@ -72,3 +72,18 @@
 		fill: $black;
 	}
 }
+
+.mobile-wrapper {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		display: none;
+	}
+
+	.mobile-wrapper {
+		display: block;
+		padding: 34px 0 84px 16px;
+	}
+}

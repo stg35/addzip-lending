@@ -25,3 +25,27 @@
 	row-gap: 140px;
 	column-gap: 20px;
 }
+
+@media (max-width: 768px) {
+	.wrapper {
+		flex-direction: column;
+		padding: 80px 16px 41px 16px;
+		margin-top: 0;
+	}
+
+	.stars {
+		display: none;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+	}
+
+	.heading {
+		font-size: 25px;
+		line-height: 32px;
+		margin-bottom: 10px;
+	}
+}

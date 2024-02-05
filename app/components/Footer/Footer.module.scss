@@ -18,3 +18,21 @@
 	font-weight: 500;
 	text-align: right;
 }
+
+.wrapper-mobile {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		display: none;
+	}
+
+	.wrapper-mobile {
+		display: flex;
+		justify-content: center;
+		gap: 90px;
+		padding: 41px 104px;
+		padding-top: 0;
+	}
+}

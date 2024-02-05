@@ -43,6 +43,11 @@ export const Header = (): JSX.Element => {
 				</div>
 				<hr />
 			</header>
+			<header className={styles['mobile-wrapper']}>
+				<div>
+					<Image src={'/mobile-logo.svg'} alt={'addzip logo'} width={120} height={15.627} />
+				</div>
+			</header>
 		</>
 	);
 };

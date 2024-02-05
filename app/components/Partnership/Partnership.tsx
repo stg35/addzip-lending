@@ -19,6 +19,9 @@ export const Partnership = (): JSX.Element => {
 				<span>
 					Вы сможете абсолютно бесплатно разместить свой ассортимент, комиссия взымается с продажи
 				</span>
+				<div className={styles['heading-mobile']}>
+					Вы сможете абсолютно бесплатно разместить свой ассортимент, комиися взымается с продажи
+				</div>
 				<form>
 					<input placeholder="Название бренда*" type="text" />
 					<input placeholder="Ссылка на сайт или ВК*" type="text" />

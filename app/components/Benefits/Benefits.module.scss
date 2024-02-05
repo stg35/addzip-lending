@@ -36,3 +36,35 @@
 	font-weight: 500;
 	line-height: 24px;
 }
+
+@media (max-width: 768px) {
+	.wrapper {
+		margin: 80px 16px;
+		flex-direction: column;
+	}
+
+	.heading {
+		max-width: 615px;
+		font-size: 25px;
+	}
+
+	.benefits {
+		display: flex;
+		flex-direction: column;
+		gap: 38px;
+		margin-top: 60px;
+	}
+
+	.benefit {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		max-width: 295px;
+	}
+
+	.benefitHeading {
+		color: $primary;
+		font-size: 21px;
+		font-weight: 700;
+	}
+}

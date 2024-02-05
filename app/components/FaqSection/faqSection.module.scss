@@ -23,3 +23,19 @@
 	height: 17px;
 	margin-top: 7px;
 }
+
+@media (max-width: 768px) {
+	.wrapper {
+		width: 100%;
+		gap: 20px;
+	}
+
+	.heading {
+		width: auto;
+	}
+
+	.headingWrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+}

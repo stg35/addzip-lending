@@ -31,3 +31,28 @@
 	bottom: 50px;
 	z-index: 1;
 }
+
+.wrapper-mobile {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.wrapper {
+		display: none;
+	}
+
+	.wrapper-mobile {
+		display: block;
+	}
+
+	.background {
+		position: relative;
+
+		&__first-logo {
+			position: absolute;
+			width: 790.204px;
+			height: 102.901px;
+			left: -300px;
+		}
+	}
+}
