@@ -1,14 +1,13 @@
 import styles from './Launch.module.scss';
-import cn from 'classnames';
 
 export const Launch = (): JSX.Element => {
 	return (
 		<>
 			<div className={styles.wrapper}>
 				<div className={styles.heading}>
-					Запуск в <span>октябре</span>
+					Запуск <span>7 марта</span>
 				</div>
-				<div className={styles.roadmap}>
+				{/* <div className={styles.roadmap}>
 					<div className={styles.month}>Июнь</div>
 					<div className={cn(styles.infoWrapper, styles.left)}>
 						<div className={styles.info}>
@@ -63,7 +62,7 @@ export const Launch = (): JSX.Element => {
 						<div className={styles.addition}>Запуск платформы</div>
 					</div>
 					<div className={styles.month}>Ноябрь</div>
-				</div>
+	</div>*/}
 			</div>
 			<div className={styles['wrapper-mobile']}>
 				Запуск в <span>Январе</span>

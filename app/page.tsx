@@ -1,6 +1,4 @@
 import { Benefits } from './components/Benefits/Benefits';
-import { FAQ } from './components/FAQ/FAQ';
-import { Functionality } from './components/Functionality/Functionality';
 import { Info } from './components/Info/Info';
 import { Launch } from './components/Launch/Launch';
 import { Partnership } from './components/Partnership/Partnership';
@@ -12,10 +10,10 @@ export default function MainPage(): JSX.Element {
 			<Welcome />
 			<Info />
 			<Benefits />
-			<Functionality />
+			{/* <Functionality /> */}
 			<Launch />
 			<Partnership />
-			<FAQ />
+			{/* <FAQ /> */}
 		</main>
 	);
 }

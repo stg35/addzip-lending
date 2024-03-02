@@ -3,15 +3,12 @@ import Image from 'next/image';
 
 export const Info = (): JSX.Element => {
 	return (
-		<div className={styles.wrapper}>
+		<div className={styles.wrapper} id="info">
 			<div className={styles.text}>
 				<div>
-					Платформа, на которой <span>российские стритвир бренды</span> продают свою одежду и
-					аксессуары
+					addZip - это агрегатор одежды и аксессуаров <span>российских стритвир брендов</span>
 				</div>
-				<div>
-					Маркетплейс, где ваш уличный стиль обретает новую жизнь — продавайте и анонсируйте дропы
-				</div>
+				<div>Размещайте товары, анонсируйте дропы и полуйчайте новые заказы!</div>
 			</div>
 			<div className={styles.mockup}>
 				<Image

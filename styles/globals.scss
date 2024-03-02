@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 html,
 body {
@@ -8,9 +8,15 @@ body {
 	background: $black;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
+	scroll-padding-top: 150px;
 }
 
-input, select, textarea, button{ font-family:inherit; }
+input,
+select,
+textarea,
+button {
+	font-family: inherit;
+}
 
 a {
 	text-decoration: none;
