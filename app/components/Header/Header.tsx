@@ -4,15 +4,11 @@ import styles from './Header.module.scss';
 import { motion } from 'framer-motion';
 import Arrow from '@/public/arrow.svg';
 import Star from '@/public/winter-star.svg';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import cn from 'classnames';
 
 export const Header = (): JSX.Element => {
 	const [isButtonHover, setIsButtonHover] = useState<boolean>(false);
-
-	useEffect(() => {
-		console.log(isButtonHover);
-	}, [isButtonHover]);
 
 	return (
 		<>

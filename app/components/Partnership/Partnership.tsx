@@ -9,8 +9,7 @@ export const Partnership = (): JSX.Element => {
 	const { handleSubmit, register } = useForm<Omit<Application, 'id'>>();
 
 	const onSubmit: SubmitHandler<Omit<Application, 'id'>> = async (data) => {
-		const res = await createApplication(data);
-		console.log(res.data, res.error);
+		await createApplication(data);
 	};
 
 	return (
