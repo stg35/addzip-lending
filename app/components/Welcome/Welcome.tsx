@@ -5,10 +5,10 @@ export const Welcome = (): JSX.Element => {
 	return (
 		<>
 			<div className={styles.wrapper}>
-				<div className={styles.heading}>
+				{/* <div className={styles.heading}>
 					<span>Streetwear</span>
 					<span>Marketplace</span>
-				</div>
+				</div> */}
 				<video autoPlay muted loop className={styles.video}>
 					<source src="/tipochki.mp4" />
 				</video>
