@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { createApplication } from '@/api/application/action';
 import WinterStar from '@/public/winter-star.svg';
+import cn from 'classnames';
 
 export const Partnership = (): JSX.Element => {
 	const {
@@ -34,6 +35,7 @@ export const Partnership = (): JSX.Element => {
 				</div>
 				<form onSubmit={handleSubmit(onSubmit)}>
 					<input
+						className={cn({ [styles['error']]: errors.BrandName })}
 						placeholder="Название бренда*"
 						type="text"
 						{...register('BrandName', { required: true })}
@@ -41,6 +43,7 @@ export const Partnership = (): JSX.Element => {
 					/>
 					{errors.BrandName && <p role="alert">{errors.BrandName.message}</p>}
 					<input
+						className={cn({ [styles['error']]: errors.Site })}
 						placeholder="Ссылка на сайт или ВК*"
 						type="text"
 						{...register('Site', { required: true })}
@@ -48,6 +51,7 @@ export const Partnership = (): JSX.Element => {
 					/>
 					{errors.Site && <p role="alert">{errors.Site.message}</p>}
 					<input
+						className={cn({ [styles['error']]: errors.Telegram })}
 						placeholder="Телеграм для связи*"
 						type="text"
 						{...register('Telegram', { required: true })}
