@@ -1,6 +1,5 @@
 import styles from './Welcome.module.scss';
 import AddzipLogo from '@/public/background-logo-mobile.svg';
-import Addzip from '@/public/addzip-welcome.svg';
 
 export const Welcome = (): JSX.Element => {
 	return (
