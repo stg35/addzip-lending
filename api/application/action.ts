@@ -1,6 +1,5 @@
 'use server';
 
-import { cookies } from 'next/headers';
 import { ApplicationResponse } from './response.interface';
 import { ApplicationParams } from './params.interface';
 
@@ -14,7 +13,8 @@ export const createApplication: queryFn<ApplicationResponse, ApplicationParams> 
 	const res = await fetch(`${process.env.URL}/application`, {
 		method: 'POST',
 		headers: {
-			Cookie: cookies().toString(),
+			Accept: 'application/json',
+			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify(params),
 	});
