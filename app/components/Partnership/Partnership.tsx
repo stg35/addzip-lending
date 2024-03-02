@@ -1,8 +1,17 @@
+'use client';
+import { Application } from '@/api/types/application';
 import styles from './Partnership.module.scss';
 import Image from 'next/image';
-//import cn from 'classnames';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { createApplication } from '@/api/application/action';
 
 export const Partnership = (): JSX.Element => {
+	const { handleSubmit, register } = useForm<Omit<Application, 'id'>>();
+
+	const onSubmit: SubmitHandler<Omit<Application, 'id'>> = async (data) => {
+		await createApplication(data);
+	};
+
 	return (
 		<div className={styles.wrapper}>
 			<div className={styles.heading}>
@@ -22,10 +31,10 @@ export const Partnership = (): JSX.Element => {
 				<div className={styles['heading-mobile']}>
 					Вы сможете абсолютно бесплатно разместить свой ассортимент, комиися взымается с продажи
 				</div>
-				<form>
-					<input placeholder="Название бренда*" type="text" />
-					<input placeholder="Ссылка на сайт или ВК*" type="text" />
-					<input placeholder="Телеграм для связи*" type="text" />
+				<form onSubmit={handleSubmit(onSubmit)}>
+					<input placeholder="Название бренда*" type="text" {...register('BrandName')} />
+					<input placeholder="Ссылка на сайт или ВК*" type="text" {...register('Site')} />
+					<input placeholder="Телеграм для связи*" type="text" {...register('Telegram')} />
 					<button>Присоединиться</button>
 				</form>
 			</div>
