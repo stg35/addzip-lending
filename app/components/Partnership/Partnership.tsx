@@ -14,6 +14,7 @@ export const Partnership = (): JSX.Element => {
 	} = useForm<Omit<Application, 'id'>>();
 
 	const onSubmit: SubmitHandler<Omit<Application, 'id'>> = async (data) => {
+		console.log(data);
 		await createApplication(data);
 	};
 
@@ -43,14 +44,14 @@ export const Partnership = (): JSX.Element => {
 					<input
 						placeholder="Ссылка на сайт или ВК*"
 						type="text"
-						{...(register('Site'), { required: true })}
+						{...register('Site', { required: true })}
 						aria-invalid={errors.Site ? 'true' : 'false'}
 					/>
 					{errors.Site && <p role="alert">{errors.Site.message}</p>}
 					<input
 						placeholder="Телеграм для связи*"
 						type="text"
-						{...(register('Telegram'), { required: true })}
+						{...register('Telegram', { required: true })}
 						aria-invalid={errors.Telegram ? 'true' : 'false'}
 					/>
 					{errors.Telegram && <p role="alert">{errors.Telegram.message}</p>}
