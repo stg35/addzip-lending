@@ -28,8 +28,12 @@ export const Partnership = (): JSX.Element => {
 				</div>
 			</div>
 			<div className={styles.form}>
-				<span className={styles.primary}>Присоединяйтесь к addZip одними из первых</span>
-				<span>Вы можете абсолютно бесплатно разместить свой ассортимент на сайте</span>
+				<span className={cn(styles.primary, styles['form-heading'])}>
+					Присоединяйтесь к addZip одними из первых
+				</span>
+				<span className={styles['form-heading']}>
+					Вы можете абсолютно бесплатно разместить свой ассортимент на сайте
+				</span>
 				<div className={styles['heading-mobile']}>
 					Вы можете абсолютно бесплатно разместить свой ассортимент на сайте
 				</div>
@@ -38,26 +42,30 @@ export const Partnership = (): JSX.Element => {
 						className={cn({ [styles['error']]: errors.BrandName })}
 						placeholder="Название бренда*"
 						type="text"
-						{...register('BrandName', { required: true })}
+						{...register('BrandName', { required: 'Заполните поле' })}
 						aria-invalid={errors.BrandName ? 'true' : 'false'}
 					/>
-					{errors.BrandName && <p role="alert">{errors.BrandName.message}</p>}
+					{errors.BrandName && (
+						<span className={styles['error-text']}>{errors.BrandName.message}</span>
+					)}
 					<input
 						className={cn({ [styles['error']]: errors.Site })}
 						placeholder="Ссылка на сайт или ВК*"
 						type="text"
-						{...register('Site', { required: true })}
+						{...register('Site', { required: 'Заполните поле' })}
 						aria-invalid={errors.Site ? 'true' : 'false'}
 					/>
-					{errors.Site && <p role="alert">{errors.Site.message}</p>}
+					{errors.Site && <span className={styles['error-text']}>{errors.Site.message}</span>}
 					<input
 						className={cn({ [styles['error']]: errors.Telegram })}
 						placeholder="Телеграм для связи*"
 						type="text"
-						{...register('Telegram', { required: true })}
+						{...register('Telegram', { required: 'Заполните поле' })}
 						aria-invalid={errors.Telegram ? 'true' : 'false'}
 					/>
-					{errors.Telegram && <p role="alert">{errors.Telegram.message}</p>}
+					{errors.Telegram && (
+						<span className={styles['error-text']}>{errors.Telegram.message}</span>
+					)}
 					<button>Присоединиться</button>
 				</form>
 			</div>
