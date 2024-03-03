@@ -65,7 +65,7 @@ export const Launch = (): JSX.Element => {
 	</div>*/}
 			</div>
 			<div className={styles['wrapper-mobile']}>
-				Запуск в <span>Январе</span>
+				Запуск <span>7 марта</span>
 			</div>
 		</>
 	);

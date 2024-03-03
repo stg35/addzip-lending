@@ -1,5 +1,8 @@
 import styles from './Welcome.module.scss';
-import AddzipLogo from '@/public/background-logo-mobile.svg';
+import WelcomMobile from '@/public/welcome-mobile.svg';
+import Arrow from '@/public/arrow-down.svg';
+import WinterStar from '@/public/winter-star.svg';
+import AnotherStar from '@/public/black-winter-star.svg';
 
 export const Welcome = (): JSX.Element => {
 	return (
@@ -21,7 +24,16 @@ export const Welcome = (): JSX.Element => {
 			</div>
 			<div className={styles['wrapper-mobile']}>
 				<div className={styles['background']}>
-					<AddzipLogo className={styles['background__first-logo']} />
+					<WelcomMobile className={styles['background__first-logo']} />
+				</div>
+				<div className={styles['content']}>
+					<button>Присоединиться</button>
+					<p className={styles['content__text']}>Стритвир Маркетплейс</p>
+					<div className={styles['content__icons']}>
+						<WinterStar className={styles['content__icons__winter-star']} />
+						<Arrow className={styles['content__icons__arrow']} />
+						<AnotherStar className={styles['content__icons__another-star']} />
+					</div>
 				</div>
 			</div>
 		</>
