@@ -13,6 +13,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
 	title: 'addZip',
 	description: 'Russian streetwear marketplace 👽',
+	viewport: { width: 'device-width', height: 'device-height' },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
