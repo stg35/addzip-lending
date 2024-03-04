@@ -11,19 +11,19 @@ export const Footer = (): JSX.Element => {
 					<WinterStar className={styles['winter-star']} />
 				</div>
 				<div className={styles['contacts']}>
-					<a href="https://t.me/add_zip" target="_blank" rel="noopener noreferrer">
+					<a href="https://t.me/addzip_streetwear" target="_blank" rel="noopener noreferrer">
 						<Image src={'/tg-mobile.svg'} width={40} height={40} alt="" />
 					</a>
-					<a href="https://vk.com/add_zip" target="_blank" rel="noopener noreferrer">
+					<a href="https://vk.com/addzip_streetwear" target="_blank" rel="noopener noreferrer">
 						<Image src={'/vk-mobile.svg'} width={45} height={45} alt="" />
 					</a>
 				</div>
 			</footer>
 			<footer className={styles['wrapper-mobile']}>
-				<a href="https://t.me/add_zip" target="_blank" rel="noopener noreferrer">
+				<a href="https://t.me/addzip_streetwear" target="_blank" rel="noopener noreferrer">
 					<Image src={'/tg-mobile.svg'} width={31} height={31} alt="" />
 				</a>
-				<a href="https://vk.com/add_zip" target="_blank" rel="noopener noreferrer">
+				<a href="https://vk.com/addzip_streetwear" target="_blank" rel="noopener noreferrer">
 					<Image src={'/vk-mobile.svg'} width={31} height={31} alt="" />
 				</a>
 			</footer>
