@@ -57,6 +57,9 @@
 
 	.wrapper-mobile {
 		display: block;
+		height: 100vh;
+		height: -webkit-fill-available;
+		overflow: hidden;
 	}
 
 	.background {
@@ -70,13 +73,12 @@
 	}
 
 	.content {
-		height: 100vh;
 		text-align: center;
+		margin-top: calc(100vh - 550px);
+		position: relative;
 
-		button {
+		.join-button {
 			position: relative;
-			cursor: pointer;
-
 			border-radius: 15px;
 			background: $primary;
 			border: none;
@@ -85,7 +87,8 @@
 			cursor: pointer;
 			font-size: 14px;
 			font-weight: 500;
-			margin-top: calc(100vh - 550px);
+
+			color: $black;
 
 			&:before {
 				content: '';
@@ -138,5 +141,8 @@
 				margin-top: 14px;
 			}
 		}
+	}
+	.bottomBlur {
+		bottom: 0;
 	}
 }

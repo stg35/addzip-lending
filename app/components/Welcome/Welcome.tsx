@@ -27,13 +27,16 @@ export const Welcome = (): JSX.Element => {
 					<WelcomMobile className={styles['background__first-logo']} />
 				</div>
 				<div className={styles['content']}>
-					<button>Присоединиться</button>
+					<a href="#partnership" className={styles['join-button']}>
+						Присоединиться
+					</a>
 					<p className={styles['content__text']}>Стритвир Маркетплейс</p>
 					<div className={styles['content__icons']}>
 						<WinterStar className={styles['content__icons__winter-star']} />
 						<Arrow className={styles['content__icons__arrow']} />
 						<AnotherStar className={styles['content__icons__another-star']} />
 					</div>
+					<div className={styles.bottomBlur}></div>
 				</div>
 			</div>
 		</>
