@@ -10,7 +10,7 @@ export const Header = (): JSX.Element => {
 		<>
 			<header className={styles.wrapper}>
 				<div className={styles.header}>
-					<Image src={'/logo.svg'} alt={'addzip logo'} width={120} height={15.627} />
+					<Image src={'/addzip_logo_clear.svg'} alt={'addzip logo'} width={120} height={50} />
 					<nav className={styles.nav}>
 						<a href="#info">О нас</a>
 						<a href="#contact">Контакты</a>
@@ -27,7 +27,7 @@ export const Header = (): JSX.Element => {
 			</header>
 			<header className={styles['mobile-wrapper']}>
 				<div>
-					<Image src={'/mobile-logo.svg'} alt={'addzip logo'} width={120} height={15.627} />
+					<Image src={'/addzip_logo_clear.svg'} alt={'addzip logo'} width={120} height={50} />
 				</div>
 			</header>
 		</>
