@@ -75,7 +75,7 @@
 	.content {
 		text-align: center;
 		height: 257px;
-		margin-top: auto;
+		margin-top: calc(100vh - 257px);
 		position: relative;
 
 		.join-button {
