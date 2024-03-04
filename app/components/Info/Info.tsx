@@ -13,10 +13,10 @@ export const Info = (): JSX.Element => {
 			<div className={styles.mockup}>
 				<Image
 					className={styles['mockup-image']}
-					src={'/info3.svg'}
+					src={'/phone3.png'}
 					alt=""
-					width={472.45}
-					height={500.494}
+					width={400}
+					height={700}
 				/>
 				<div className={styles['bottomBlur']}></div>
 			</div>
